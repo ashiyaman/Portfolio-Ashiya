@@ -1,0 +1,103 @@
+.flex{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+    background-color: transparent;
+    background-size: cover;
+}
+
+.header > *{
+    padding: 0.3rem 1rem;
+}
+
+nav{    
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #d3dbe5;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0rem 1rem;
+}
+
+nav li{
+    color: #1b3c69;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+.hero-text{
+    padding: 0px 5rem;
+}
+
+section, .description{
+    margin-top: 8vh;
+}
+
+.intro{
+    color: #1b3c69;
+    margin: 1.5rem auto;
+}
+
+h2:first-of-type{
+    color: #e85a4f !important;
+}
+
+.name{
+    color: #6c6c6c;
+    font-size: 7vw;
+    font-weight: 600;
+    margin: 1rem 0px;
+}
+
+.description{
+    color: #6c6c6c
+}
+
+svg{
+    height: 20px;
+    color: #1b3c69;
+    width: 20px;
+}
+
+.contact-pills{
+    bottom: 0vh;
+    color: #1b3c69;
+    padding: auto 0.3rem;
+    position: fixed;
+}
+
+.contact-pills ul::after{
+    background-color: #1b3c69;
+    content: "";
+    display: block;
+    height: 90px;   
+    margin-left: 0.5rem; 
+    width: 1px;
+}
+
+.contact-pills li{
+    padding: 0.5rem 0px;
+}
+
+.typing::after{
+    animation: blink 0.8s steps(2, start) infinite;     
+    content: "|";
+}
+
+@keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+
+@media(max-width: 740px){
+    section, .description{
+        margin-top: 12vh;
+    }
+}
+
