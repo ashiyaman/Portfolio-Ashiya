@@ -1,0 +1,70 @@
+svg{
+    color: var(--color-heading);
+    height: 20px;
+    width: 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+
+
+h2:first-of-type{
+    color: var(--color-accent) !important;
+}
+
+.description, .typing{
+    color: var(--color-primary) !important;
+}
+
+.intro{
+    color: var(--color-heading);
+    margin: 1.5rem auto;
+}
+
+.name{
+    color: var(--color-primary);
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 1rem 0px;
+}
+
+.description{
+    padding-right: 2rem;
+}
+
+.typing::after{
+    animation: blink 0.8s steps(2, start) infinite;     
+    content: "|";
+}
+
+.contact-pills{
+    bottom: 0;
+    position: fixed;
+    right: 2rem
+}
+
+.contact-pills li{
+    padding: 0.5rem 0px;
+}
+
+.contact-pills svg:hover{
+    color: var(--color-accent);
+}
+
+.contact-pills::after{
+    content: '';
+    display: block;
+    margin: auto;
+    background-color: var(--color-heading);
+    height: 100px;
+    width: 1px;
+}
+
+@media(max-width: 740px){
+    .name{
+        font-size: 2rem;
+        font-weight: 200;
+    }
+}

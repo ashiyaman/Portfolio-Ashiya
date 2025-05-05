@@ -1,0 +1,55 @@
+import { Link } from "react-router-dom";
+
+import "./Navbar.css";
+import { useState } from "react";
+
+const Navbar = () => {
+  const [showNav, setShowNav] = useState(false);
+  return (
+    <nav className="flex">
+      <a href="/">Ashiya</a>
+      {!showNav && 
+        <button onClick={() => setShowNav(!showNav)} 
+          className={`hamburger toggle`}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>}
+      {showNav && <button onClick={() => setShowNav(!showNav)} className="hamburger">X</button>}
+      <div className={`flex nav ${showNav ? 'show' : ''}`}>
+        <ul className="flex">
+          <li>
+            <Link to="/">
+              <strong>Home</strong>
+            </Link>
+          </li>
+          <li>
+            <Link to="/about">
+              <strong>About</strong>
+            </Link>
+          </li>
+          <li>
+            <Link to="/work">
+              <strong>Work</strong>
+            </Link>
+          </li>
+          <li>
+            <Link to="/skills">
+              <strong>Skills</strong>
+            </Link>
+          </li>
+          <li>
+            <Link to="/resume">
+              <strong>Resume</strong>
+            </Link>
+          </li>
+          <li>
+            <button>dark</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

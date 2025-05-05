@@ -1,14 +1,42 @@
-body{
-    font-family: 'Inter', sans-serif;
-    margin: 0px;
+:root{
+    --color-heading: #1b3c69;
+    --color-primary: #6c6c6c;
+    --color-secondary: #6c6c6c;
+    --color-accent: #e85a4f
 }
 
-*{
-    box-sizing: border-box;
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.3;
+  }
+  
+  code, pre {
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+  }
+  
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    border: 1px solid red;
+    background-image: url('./assets/hero2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    padding: 1rem;
 }
 
 .hero{
-    background-image: url('./assets/hero2.png');
-    background-size: cover;
-    height: 100vh;
+    padding: 0px 2rem;
 }

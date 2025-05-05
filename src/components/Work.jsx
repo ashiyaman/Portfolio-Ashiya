@@ -1,6 +1,6 @@
 const Work = () => {
     return (
-        <section>
+        <section className="hero">
             <h2>Projects</h2>
             <div>
                 <a href='https://sprout-nest-fe.vercel.app/'>

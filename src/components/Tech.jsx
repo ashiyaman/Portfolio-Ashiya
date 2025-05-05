@@ -1,6 +1,6 @@
 const Tech = () => {
     return (
-        <section>
+        <section className="hero">
             <h3>Tech Stack</h3>
             <div>
                 <div>

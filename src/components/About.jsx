@@ -1,8 +1,9 @@
 const About = () => {
     return (
-        <section>
+        <section className="hero">
+            <h3>About</h3>
             <p>
-                I’m Ashiya — a full-stack developer fluent in JavaScript and passionate about building smooth, 
+                Hello! I'm Ashiya — a full-stack developer fluent in JavaScript and passionate about building smooth, 
                 scalable web apps using the MERN stack (MongoDB, Express, React, Node.js).
             </p>
             <p>

@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import Link
-import "./Header.css";
+import "./Home.css"; 
 
-const Header = () => {
+const Home = () => {
   const text = 'I  build things for the web, front to back.'
   const [typingText, setTypingText] = useState('')
   useEffect(() => {   
@@ -18,29 +17,20 @@ const Header = () => {
     }, 100)
     return () => clearInterval(interval)
   }, [])
-  return (
-    <div className="header">
-      <nav className="flex">
-        <a href="/">Ashiya</a>
-        <div className="flex">
-          <ul className="flex">
-            <li>
-              <a ><strong>About</strong></a>
-            </li>
-            <li>
-              <strong>Work</strong>
-            </li>
-            <li>
-              <strong>Skills</strong>
-            </li>
-            <li>
-              <strong>Resume</strong>
-            </li>
-          </ul>
-          <button>dark</button>
-        </div>
-      </nav>
-      <div className="flex">
+  return (    
+      <div className="hero">        
+        <section className="hero-text">
+            <p className="intro">
+            <b>Hi, My Name is</b>{" "}
+            </p>
+            <h2 className="name">Ashiya Banu.</h2>
+            <h2 className="name typing">{typingText}</h2>
+            <p className="description">
+              I’m a MERN stack developer who loves turning ideas into fast,
+              functional, and beautiful web apps. Whether it’s crafting React UIs or
+              building powerful APIs.
+            </p>
+        </section>
         <section className="contact-pills">
             <ul >
               <li>
@@ -122,21 +112,9 @@ const Header = () => {
               </li>
             </ul>
         </section>
-        <section className="hero-text">
-            <p className="intro">
-            <b>Hi, My Name is</b>{" "}
-            </p>
-            <h2 className="name">Ashiya Banu.</h2>
-            <h2 className="name typing">{typingText}</h2>
-            <p className="description">
-              I’m a MERN stack developer who loves turning ideas into fast,
-              functional, and beautiful web apps. Whether it’s crafting React UIs or
-              building powerful APIs.
-            </p>
-        </section>
       </div>
-    </div>
+
   );
 };
 
-export default Header;
+export default Home;
