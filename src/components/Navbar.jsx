@@ -5,17 +5,23 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+  const [showClose, setShowClose] = useState(false)
   return (
     <nav className="flex">
       <a href="/">Ashiya</a>
       {!showNav && 
-        <button onClick={() => setShowNav(!showNav)} 
+        <button onClick={() => {
+          setShowNav(!showNav) 
+          setShowClose(!showClose)}} 
           className={`hamburger toggle`}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
       </button>}
-      {showNav && <button onClick={() => setShowNav(!showNav)} className="hamburger">X</button>}
+        {showClose && <button onClick={() => {
+          setShowNav(!showNav)
+          setShowClose(!showClose)
+        }} className="hamburger">X</button>}
       <div className={`flex nav ${showNav ? 'show' : ''}`}>
         <ul className="flex">
           <li>
@@ -42,9 +48,6 @@ const Navbar = () => {
             <Link to="/resume">
               <strong>Resume</strong>
             </Link>
-          </li>
-          <li>
-            <button>dark</button>
           </li>
         </ul>
       </div>

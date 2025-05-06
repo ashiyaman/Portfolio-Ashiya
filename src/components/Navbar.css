@@ -35,6 +35,10 @@ nav li a:hover{
     display: none;
 }
 
+.nav.show {
+  display: flex;
+}
+
 .hamburger{
     display: none;
 }
@@ -86,10 +90,6 @@ nav li a:hover{
         width: 50%;
         margin: 0px;
         padding: 1rem;
-    }
-  
-    .nav.show {
-      display: flex;
     }
   
     .nav ul {

@@ -1,0 +1,35 @@
+.tech-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tech-section div{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-heading);
+    border: solid;
+    border-width: 2px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, var(--color-accent), var(--color-secondary));
+    border-radius: 5px;
+    margin: 1rem;
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-section div svg{
+    color: var(--color-accent)
+}
+
+.tech-section div p{
+    color: var(--color-secondary);
+}
+
+.tech-section div svg, .tech-section div p{    
+    padding: 0.3rem;
+    margin: 0;
+}

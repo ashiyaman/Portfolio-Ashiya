@@ -1,35 +1,48 @@
+import './Tech.css'
+
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub } from 'react-icons/fa';
+import { SiRedux, SiMongodb, SiNodedotjs, SiExpress } from 'react-icons/si';
+
 const Tech = () => {
     return (
         <section className="hero">
             <h3>Tech Stack</h3>
-            <div>
-                <div>
-                    <svg></svg>
+            <div className="tech-section">                
+                <div className="flex">
+                    <FaHtml5 title="HTML5" size={40} />
                     <p>HTML</p>
                 </div>
                 <div>
-                    <svg></svg>
+                <FaCss3Alt title="CSS" size={40} />
                     <p>CSS</p>
                 </div>
                 <div>
-                    <svg></svg>
+                <FaJs title="JS" size={40} />
                     <p>JS</p>
                 </div>
                 <div>
-                    <svg></svg>
+                <FaReact title="React" size={40} />
                     <p>React</p>
                 </div>
                 <div>
-                    <svg></svg>
+                <SiRedux title="Redux" size={40} />
                     <p>Redux</p>
                 </div>
                 <div>
-                    <svg></svg>
-                    <p>github</p>
+                <FaGithub title="Github" size={40} />
+                    <p>Github</p>
                 </div>
                 <div>
-                    <svg></svg>
+                <SiMongodb title="MongoDB" size={40} />
                     <p>Mongodb</p>
+                </div>
+                <div>
+                <SiNodedotjs title="NodeJS" size={40} />
+                    <p>Node</p>
+                </div>
+                <div>
+                <SiExpress title="Express" size={40} />
+                    <p>Express</p>
                 </div>
             </div>
         </section>

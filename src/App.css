@@ -40,3 +40,26 @@ main{
 .hero{
     padding: 2rem;
 }
+
+.contact-pills{
+    bottom: 0;
+    position: fixed;
+    right: 2rem
+}
+
+.contact-pills li{
+    padding: 0.5rem 0px;
+}
+
+.contact-pills svg:hover{
+    color: var(--color-accent);
+}
+
+.contact-pills::after{
+    content: '';
+    display: block;
+    margin: auto;
+    background-color: var(--color-heading);
+    height: 100px;
+    width: 1px;
+}
