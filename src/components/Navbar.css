@@ -6,7 +6,10 @@
 nav{
     align-items: center;
     background-color: var(--color-heading);
+    border-bottom: 1px solid var(--color-secondary);
     overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 nav > *{
@@ -18,7 +21,7 @@ nav li{
 }
 
 nav li a{
-    color: var(--color-primary);
+    color: var(--color-secondary);
     font-size: 400;
     text-decoration: none;
     text-transform: uppercase

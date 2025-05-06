@@ -1,19 +1,19 @@
 :root{
     --color-heading: #1b3c69;
-    --color-primary: #6c6c6c;
-    --color-secondary: #6c6c6c;
+    --color-primary: #3a3a3a;
+    --color-secondary: #b5b5b5;
     --color-accent: #e85a4f
 }
 
 body {
     font-family: 'Inter', sans-serif;
+    font-weight: 500;
     line-height: 1.3;
   }
   
-  code, pre {
-    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
-  }
-  
+code, pre {
+font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+}  
 
 ul{
     list-style: none;
@@ -38,5 +38,5 @@ main{
 }
 
 .hero{
-    padding: 0px 2rem;
+    padding: 2rem;
 }
