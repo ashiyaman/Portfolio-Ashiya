@@ -13,12 +13,14 @@
     border-width: 2px;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, var(--color-accent), var(--color-secondary));
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 1rem;
     width: 5rem;
     height: 5rem;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .tech-section div svg{
@@ -32,4 +34,8 @@
 .tech-section div svg, .tech-section div p{    
     padding: 0.3rem;
     margin: 0;
+}
+
+.tech-section div:hover{
+    transform: scale(1.05);
 }

@@ -83,7 +83,7 @@ nav li a:hover{
     .nav {
         flex-direction: column;
         background-color: var(--color-heading);
-        position: absolute;
+        position: inherit;
         top: 44px;
         right: 0;
         height: 100%;
