@@ -91,6 +91,12 @@ nav li a:hover{
         margin: 0px;
         padding: 1rem;
     }
+
+    .nav a{
+      background-color: var(--color-secondary);
+      border-radius: 50%;
+      color: var(--color-heading);
+    }
   
     .nav ul {
       flex-direction: column;

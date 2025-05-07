@@ -8,7 +8,7 @@ const Navbar = () => {
   const [showClose, setShowClose] = useState(false)
   return (
     <nav className="flex">
-      <a href="/">Ashiya</a>
+      <a href="/"><img src="../../src/assets/AB_logo.svg" width="24" height="24" fill="currentColor"/></a>
       {!showNav && 
         <button onClick={() => {
           setShowNav(!showNav) 
