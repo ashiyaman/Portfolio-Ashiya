@@ -8,7 +8,8 @@
 .work-section{
     display: flex;
     flex-direction: column;
-    gap: 4rem
+    gap: 4rem;
+    margin-bottom: 4rem;
 }
 
 .work{
@@ -28,18 +29,25 @@
     position: sticky;
 }
 
+.work a{
+    text-decoration: none;
+}
+
 .work:first-of-type{
-    top: calc(var(--stickyCard1) * 3rem)
+    top: calc(var(--stickyCard1) * 3rem);
+    z-index: 20;
 }
 
 .work:nth-child(2){
-    top: calc(var(--stickyCard2) * 3rem)
+    top: calc(var(--stickyCard2) * 3rem);
+    z-index: 30;
 }
 .work:nth-child(3){
-    top: calc(var(--stickyCard3) * 3rem)
+    top: calc(var(--stickyCard3) * 3rem);
+    z-index: 40;
 }
 .work:nth-child(4){
-    top: calc(var(--stickyCard4) * 4rem)
+    top: calc(var(--stickyCard4) * 3rem)
 }
 
 .work img{
@@ -97,15 +105,15 @@ code p{
 
 @media (max-width: 600px) {
     .work:first-of-type {
-      top: 1rem;
+      top: 4rem;
     }
     .work:nth-child(2) {
-      top: 4rem;
+      top: 8rem;
     }
     .work:nth-child(3) {
-      top: 3rem;
+      top: 24rem;
     }
     .work:nth-child(4) {
-      top: 4rem;
+      top: 32rem;
     }
   }
