@@ -87,7 +87,8 @@ const Work = () => {
                 I developed the front-end using React.js and Bootstrap, and the back-end using Node.js and Express. 
                 Users can browse event categories, view event details, and save favorite events. The application uses MongoDB for data storage 
                 and offers a seamless experience with responsive design and smooth navigation.
-                {'}'}
+              </p>
+              <p>{'}'}
               </p>
             </code>
           </div>
