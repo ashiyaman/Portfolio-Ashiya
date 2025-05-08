@@ -63,23 +63,6 @@ function App() {
                   </a>
               </li>
               <li>
-                  <a href="mailto:ashiya1005@gmail.com" aria-label="Email">
-                  <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewBox="0 0 24 24"
-                  >
-                      <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 17.25V6.75A2.25 2.25 0 014.5 4.5h15a2.25 2.25 0 012.25 2.25zM3.75 6.75l8.25 5.25 8.25-5.25"
-                      />
-                  </svg>
-                  </a>
-              </li>
-              <li>
                   <a href="https://codepen.io/ashiya" target="_blank" aria-label="CodePen">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
