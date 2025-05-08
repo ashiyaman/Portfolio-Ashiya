@@ -7,7 +7,7 @@ const Work = () => {
       <h3>Projects</h3>
       <div className="work-section">
         <div className="work">
-          <a href="https://sprout-nest-fe.vercel.app/" target="_blank">
+          <a href="https://sprout-nest-fe.vercel.app/" target="_blank" aria-label="Project-Sprout Nest">
             <div className="work-details">
               <div className="work-header">
                   <div>
@@ -37,7 +37,7 @@ const Work = () => {
           </a>
         </div>
         <div className="work">
-          <a href="https://dish-deck-fe.vercel.app/" target='_blank'>
+          <a href="https://dish-deck-fe.vercel.app/" target='_blank' aria-label="Project-Dish Deck">
             <div className="work-details">
             <div className="work-header">
                   <div>
@@ -65,7 +65,7 @@ const Work = () => {
           </a>
         </div>
         <div className="work">
-          <a href="https://eventura-fe.vercel.app/" target="_blank">
+          <a href="https://eventura-fe.vercel.app/" target="_blank" aria-label="Project-Eventura">
           <div className="work-details">
           <div className="work-header">
                 <div>
